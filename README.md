@@ -2,6 +2,8 @@
 
 Use this image to build your python packages, use [mwaeckerlin/python](https://github.com/mwaeckerlin/python) for the final build stage. That image has no shell and nothing you don't need.
 
+All features are listed in [FEATURES.md](FEATURES.md), all tests in [TESTS.md](TESTS.md). `npm test` runs the docs contract (every feature has a test, no skipped tests) and the config contract (interpreter, installer, unprivileged build user, writable `/app`, packaging helper).
+
 Simple example:
 
 ```
