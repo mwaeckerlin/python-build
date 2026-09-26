@@ -1,10 +1,11 @@
 {
   "name": "@mwaeckerlin/python-build",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
     "build": "docker compose build",
     "test": "npm run test:docs && npm run test:contract",
     "test:docs": "bash tests/docs-contract.sh",
-    "test:contract": "npm run build && bash tests/config-contract.sh mwaeckerlin/python-build"
+    "test:contract": "npm run build && bash tests/config-contract.sh mwaeckerlin/python-build",
+    "deploy": "docker compose push"
   }
 }
